@@ -8,20 +8,20 @@ import ValidateResetCode from "./components/ValidateResetCode";
 import ChangePassword from "./components/ChangePassword";
 
 function App() {
-	const user = localStorage.getItem("user");
+  const user = localStorage.getItem("user");
 
-	return (
-		<Routes>
-			{user && <Route path="/" exact element={<Main />} />}
-			<Route path="/signup" exact element={<Signup />} />
-			<Route path="/activate" exact element={<Activate />} />
-			<Route path="/login" exact element={<Login />} />
-			<Route path="/forgot" exact element={<Forgot />} />
-			<Route path="/validateResetCode" exact element={<ValidateResetCode />} />
-			<Route path="/changePassword" exact element={<ChangePassword />} />
-			<Route path="/" element={<Navigate replace to="/login" />} />
-		</Routes>
-	);
+  return (
+    <Routes>
+      {user && <Route path="/" exact element={<Main />} />}
+      <Route path="/signup" exact element={<Signup />} />
+      <Route path="/activate" exact element={<Activate />} />
+      <Route path="/login" exact element={<Login />} />
+      <Route path="/forgot" exact element={<Forgot />} />
+      <Route path="/validateResetCode" exact element={<ValidateResetCode />} />
+      <Route path="/changePassword" exact element={<ChangePassword />} />
+      <Route path="/" element={<Navigate replace to="/login" />} />
+    </Routes>
+  );
 }
 
 export default App;
