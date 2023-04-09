@@ -34,7 +34,7 @@ exports.signup = async (req, res) => {
     if (check) {
       return res.status(400).json({
         message:
-          "This email address already exists,try with a different email address",
+          "This email address already exists.",
       });
     }
     if (!validateEmail(email)) {
@@ -92,7 +92,7 @@ exports.activate = async (req, res) => {
       .json({ success: true, message: "Your account has been verified" });
   } catch (err) {
     console.log(err);
-    return res.status(500).json({ message: error.message });
+    return res.status(500).json({ message: err.message });
   }
 };
 

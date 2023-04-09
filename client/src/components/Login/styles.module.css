@@ -111,3 +111,105 @@
   color: white;
   margin: 10px;
 }
+
+@media (max-width: 750px) {
+  .login_form_container {
+    width: 80%;
+    height: 550px;
+    display: block !important;
+  }
+  .form_container h1 {
+    font-size: 30px;
+  }
+  .input {
+    width: 95%;
+  }
+  .left {
+    height: 400px;
+    border: none;
+  }
+
+  .right {
+    background: transparent;
+    height: 120px;
+  }
+  .error_msg {
+    width: 95%;
+  }
+  .green_btn {
+    width: 75%;
+  }
+}
+@media (max-width: 560px) {
+  .input {
+    width: 85%;
+  }
+  .error_msg {
+    width: 85%;
+  }
+  .form_container h1 {
+    font-size: 30px;
+  }
+  .right h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 410px) {
+  .input {
+    width: 85%;
+  }
+  .error_msg {
+    width: 85%;
+  }
+  .form_container h1 {
+    font-size: 27px;
+  }
+}
+@media (max-width: 365px) {
+  .input {
+    width: 75%;
+  }
+  .error_msg {
+    width: 75%;
+  }
+  .form_container h1 {
+    font-size: 22px;
+  }
+  .right h1 {
+    font-size: 25px;
+  }
+  /* .green_btn{
+    width: 150px;
+  } */
+}
+@media (max-width: 290px) {
+  .input {
+    width: 70%;
+  }
+  .error_msg {
+    width: 70%;
+  }
+  .form_container h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 270px) {
+  .input {
+    width: 60%;
+  }
+  .error_msg {
+    width: 60%;
+  }
+  .form_container h1 {
+    font-size: 17px;
+  }
+  .right h1 {
+    font-size: 20px;
+  }
+  .white_btn {
+    width: 130px;
+  }
+  .green_btn {
+    width: 130px;
+  }
+}
