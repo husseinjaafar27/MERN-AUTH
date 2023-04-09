@@ -14,7 +14,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = "http://localhost:8000/user/login";
+      const url = "https://mern-auth-app-hj.onrender.com/user/login";
       const { data: res } = await axios.post(url, data);
       localStorage.setItem("user", res.data);
       window.location = "/";
