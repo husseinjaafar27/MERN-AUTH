@@ -1,9 +1,10 @@
 import { useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "./styles.module.css";
 
 const ValidateResetCode = () => {
+  const navigate = useNavigate();
   const [data, setData] = useState({ email: "", code: "" });
   const [error, setError] = useState("");
 
@@ -16,7 +17,7 @@ const ValidateResetCode = () => {
     try {
       const url = "https://mern-auth-app-hj.onrender.com/user/validateResetCode";
       const { data: res } = await axios.post(url, data);
-      window.location = "/changePassword";
+      navigate("/changePassword");
       console.log(res.message);
     } catch (error) {
       setError(error.response.data.message);
