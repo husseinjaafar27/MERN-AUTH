@@ -13,7 +13,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = "http://localhost:8000/user/activate";
+      const url = "https://mern-auth-app-hj.onrender.com/user/activate";
       const { data: res } = await axios.patch(url, data);
       localStorage.setItem("user", res.data);
       window.location = "/";

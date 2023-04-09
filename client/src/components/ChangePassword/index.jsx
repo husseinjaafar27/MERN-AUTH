@@ -14,7 +14,7 @@ const ChangePassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = "http://localhost:8000/user/changePassword";
+      const url = "https://mern-auth-app-hj.onrender.com/user/changePassword";
       const { data: res } = await axios.patch(url, data);
 
       setLoading(true);

@@ -20,7 +20,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = "http://localhost:8000/user/signup";
+      const url = "https://mern-auth-app-hj.onrender.com/user/signup";
       const { data: res } = await axios.post(url, data);
       navigate("/activate");
       console.log(res.message);

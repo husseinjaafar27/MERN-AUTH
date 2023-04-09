@@ -14,7 +14,7 @@ const ValidateResetCode = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = "http://localhost:8000/user/validateResetCode";
+      const url = "https://mern-auth-app-hj.onrender.com/user/validateResetCode";
       const { data: res } = await axios.post(url, data);
       window.location = "/changePassword";
       console.log(res.message);
